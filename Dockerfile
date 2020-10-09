@@ -7,6 +7,8 @@ RUN apk add --update --no-cache \
 
 COPY etc/lighttpd/* /etc/lighttpd/
 COPY start.sh /usr/local/bin/
+COPY update.sh /usr/local/bin/
+COPY setup.sh /usr/local/bin/
 
 EXPOSE 80
 HEALTHCHECK --interval=2m --timeout=5s --start-period=1m \
