@@ -3,7 +3,7 @@ RUN apk add --update --no-cache \
 	lighttpd lighttpd-mod_auth curl git && \
     rm -rf /var/cache/apk/* && \
     mkdir -p /www/htdocs && \
-    echo "It works!" >> /www/htdocs/index.html
+#    echo "It works!" >> /www/htdocs/index.html
 
 COPY etc/lighttpd/* /etc/lighttpd/
 COPY start.sh /usr/local/bin/
