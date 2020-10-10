@@ -6,7 +6,7 @@ if  [[ ! -z "$GITREPO" ]] && [[ -z "$(ls -A $TARGETDIR)" ]]; then
   git init
   git remote add origin $GITREPO
   git fetch
-  git checkout master
+  git checkout main
 fi 
 if [[ ! -z "$GITBRANCH" ]]; then
   cd /www/htdocs
